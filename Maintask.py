@@ -1,4 +1,3 @@
-
 def greeting(username):
     print(f"\n Hi {username} Welcome to the Exam Portal! \n")
 
@@ -97,7 +96,7 @@ while True:
     if len(courses_completed) == 4:
         break
     raw_courses_input = input(
-        f"\n Welcome to the Course Sectiion. Select 4 Courses with each course seperated by a single comma:\n {', '.join(courses)} \n \n").strip()
+        f"\n Welcome to the Course Section. Select 4 Courses with each course seperated by a single comma:\n {', '.join(courses)} \n \n").strip()
     courses_input_list = [s.strip().title()
                           # splits input into list
                           for s in raw_courses_input.split(",") if s.strip()]
@@ -240,7 +239,7 @@ while True:
                     else:
                         chm_score += 0
                     Q4 = input(
-                        " \n4. What is the compound CaCl?: \n A. Calcium Chloride \n B. Calcium Oxide \n C. Calcium bicarbonate \n D. Caustic soda \n \n ").title()
+                        " \n4. What is the compound CaCl2?: \n A. Calcium Chloride \n B. Calcium Oxide \n C. Calcium bicarbonate \n D. Caustic soda \n \n ").title()
                     if Q4 == "A":
                         chm_score += 20
                     else:
